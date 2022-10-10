@@ -1,2 +1,2 @@
 #!/bin/bash
-tr -d 'b' | tr -d 'B'
+tr -d 'c' | tr -d 'C'
