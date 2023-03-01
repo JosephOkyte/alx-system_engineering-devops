@@ -1,15 +1,15 @@
 #!/usr/bin/env bash
-#more while if stuff
-
-count=1
-while [ $count -ne 11 ]
-do
-    if [ $count -eq 4 ]; then
+# This script is displays luck messages for numbers or "Best School"
+counter=1
+while [ $counter -lt 11 ]; do
+    if [ $counter -eq 4 ]
+    then
 	echo "bad luck"
-    elif [ $count -eq 8 ]; then
+    elif [ $counter -eq 8 ]
+    then
 	echo "good luck"
     else
-	echo "Holberton School"
+	echo "Best School"
     fi
-    ((count++))
+    let counter=counter+1
 done
